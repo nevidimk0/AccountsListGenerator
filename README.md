@@ -1,5 +1,5 @@
 # AccountsListGenerator
- Tool to create account names based on names
+ Tool to create account names based on real names
 
 Account name generation rules:
  1. Complete first name plus last name
