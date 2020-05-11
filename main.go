@@ -82,7 +82,6 @@ func get_all_combinations(parts []string) ([]string) {
 		combinations = append(combinations,string(second_part[0:3])+"."+first_part) // Type 4 alt + dot
 		combinations = append(combinations,string(second_part[0:3])+"-"+first_part) // Type 4 alt + hyphen
 	}
-	fmt.Println("Function")
 	
 	return combinations
 }
@@ -100,19 +99,17 @@ func main() {
 	var total_combinations []string
 	for scanner.Scan() {
 		line_to_process := scanner.Text()
-		fmt.Println(line_to_process)
 		if strings.Contains(line_to_process, " ") {
-			fmt.Println("Will process")
 			space := regexp.MustCompile(`\s+`)
 			line_to_process = space.ReplaceAllString(line_to_process, " ")
 			username_slice := strings.Split(line_to_process," ")
-			fmt.Println(get_all_combinations(username_slice))
 			total_combinations = append(total_combinations,get_all_combinations(username_slice)...)
 		} else {
 			total_combinations = append(total_combinations,line_to_process)
 		}
 	}
-	fmt.Println(total_combinations)
 	unique_combinations := unique(total_combinations)
-	fmt.Println(unique_combinations)
+	for _,final_item := range unique_combinations {
+		fmt.Println(final_item)
+	}
 }
