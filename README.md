@@ -11,21 +11,21 @@ Account name generation rules:
  
  Input file:
  
-  Bill Murray
+        Bill Murray
   
-  Mike Myers
+        Mike Myers
 
 
 
  Output:
  
-  BillMurray
+        BillMurray
   
-  Bill.Murray
+        Bill.Murray
   
-  ...
+        ...
   
-  Mye.Mike
+        Mye.Mike
   
-  Mye-Mike
+        Mye-Mike
   
