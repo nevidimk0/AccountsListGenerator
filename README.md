@@ -10,5 +10,7 @@ Account name generation rules:
  Usage: go run ./main.go users.txt
  
  users.txt:
+ 
  Bill Murray
+ 
  Mike Myers
